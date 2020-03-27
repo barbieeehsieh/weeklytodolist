@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto+Condensed&display=swap');
+
+
+h1{
+  font-family: 'Indie Flower';
+  text-align: center;
+  font-weight:bold;
+}
+
+body{
+  background-color: #ebdddd;
+}
+
+/*Input holder*/
+input::placeholder{
+  font-size: 15px;
+  font-family: arial;
+}
+
+input[type="text"] {
+  padding: 12px;
+  width: 20%;
+  font-size: 1.00em;
+  outline: none;
+  border:1px solid #d6bcd6;
+  border-radius:15px;
+  flex: 90%;
+  background: ##e3d8e1;
+  height:10px;
+  font-family: arial;
+}
+
+.center{
+  text-align:center;
+}
+
+/*add button*/
+button {
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:17px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:12px;
+	padding:2px 8px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+button:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+/*weekly to do list boxes*/
+.monday{
+  display: flex;
+  flex-direction: column;
+  height:350px;
+  width:250px;
+  border: 1px solid black;
+  border-radius:15px;
+  background-color: #f5f5f5;
+  padding-left: 20px;
+  margin:10px;
+  font-weight: bolder;
+  color:#a38484;
+  font-size: 25px;
+}
+.tuesday{
+  display: flex;
+  flex-direction: column;
+  height:350px;
+  width:250px;
+  border: 1px solid black;
+  border-radius:15px;
+  padding-left: 20px;
+  margin:10px;
+  background-color: #f5f5f5;
+  color:#a38484;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.wednesday{
+  display: flex;
+  flex-direction: column;
+  height:350px;
+  width:250px;
+  border: 1px solid black;
+  border-radius:15px;
+  padding-left: 20px;
+  margin:10px;
+  background-color: #f5f5f5;
+  color:#a38484;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.thursday{
+  display: flex;
+  flex-direction: column;
+  height:350px;
+  width:250px;
+  border: 1px solid black;
+  border-radius:15px;
+  padding-left: 20px;
+  margin:10px;
+  background-color: #f5f5f5;
+  color:#a38484;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.friday{
+  display: flex;
+  flex-direction: column;
+  height:350px;
+  width:250px;
+  border: 1px solid black;
+  border-radius:15px;
+  padding-left: 20px;
+  margin:10px;
+  background-color: #f5f5f5;
+  color:#a38484;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.saturday{
+  display: flex;
+  flex-direction: column;
+  height:350px;
+  width:250px;
+  border: 1px solid black;
+  border-radius:15px;
+  padding-left: 20px;
+  margin:10px;
+  background-color: #f5f5f5;
+  color:#a38484;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.sunday{
+  display: flex;
+  flex-direction: column;
+  height:350px;
+  width:250px;
+  border: 1px solid black;
+  border-radius:15px;
+  padding-left: 20px;
+  margin:10px;
+  background-color: #f5f5f5;
+  color:#a38484;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.things{
+  display: flex;
+  flex-direction: column;
+  height:300px;
+  width:300px;
+  border: 1px solid black;
+  border-radius:15px;
+  padding-left: 20px;
+  margin:20px;
+  background-color: #ad7c78;
+  color:white;
+  font-size: 18px;
+  font-weight: bolder;
+  align-items: left;
+}
+
+
+/*Grid*/
+.grid-container{
+  display:grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-areas:
+  "box1 box2"
+}
+.box1-container{
+  display: flex;
+  flex-wrap: wrap;
+  grid-area:box1;
+  align-items: center;
+  margin-top:20px;
+}
+.box2-container{
+  display: flex;
+  grid-area:box2;
+  margin-top:20px;
+
+}
+
+/*Selection area*/
+ul{
+  margin:5px;
+  text-align:left;
+  color:#66567a;
+  font-weight: bold;
+}
+.ul-container{
+  display: grid;
+  text-align:center;
+  height:250px;
+  width:150px;
+  margin-left: 450px;
+  margin-top:20px;
+}
+.ul-container{
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+/* padding:10px; */
+grid-template-areas:
+"mon add1-btn"
+"tues add2"
+"wed add3"
+"thurs add4"
+"fri add5"
+"sat add6"
+"sun add7"
+"thi add8"
+}
+
+/*output*/
+.item-container{
+  display: flex;
+  justify-content: left;
+  width:200px;
+  color:#4a2828;
+  font-size:15px;
+  font-family:arial;
+  padding-top: 3px;
+  font-weight:normal;
+  font-family:'Playfair Display';
+  padding:5px;
+}
+.remember-container{
+  display: flex;
+  justify-content: left;
+  width:200px;
+  color:#ffe3f1;
+  font-size:18px;
+  font-family:arial;
+  padding-top: 2px;
+  font-weight:bold;
+  font-family:'Playfair Display';
+  padding:1px;
+}
+
+/*Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d1a3a3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8f6363;
+}
